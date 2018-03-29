@@ -25,10 +25,11 @@ employers = {
 
 
 mainList = {
-	oneDay,
+	oneDay: budget / 30,
 	nameShop,
 	shopGoods,
 	employers,
+	open : true,
 	newWindow 
 }
 
