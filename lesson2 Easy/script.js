@@ -37,7 +37,16 @@ for (let i = 0; i < 3; i++) {
 }
 
 
-
+let time = 17;
+if (time < 0) {
+	console.log('Такого не может быть');
+			} else if(time > 8 && time < 20){
+				console.log('Магазин работет');
+						}else if(time < 24){
+							console.log('Магазин закрыт');
+									}else{
+										console.log('Такого не может быть');
+									};
 
 
 // !!!!!!!!!!!!!
