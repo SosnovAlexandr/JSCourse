@@ -27,7 +27,7 @@ mainList = {
 	nameShop,
 	shopGoods: [],
 	employers: [],
-	open : true,
+	open : false,
 	discount: true
 }
 
@@ -82,6 +82,7 @@ function workTime(time){
 				console.log('Такого не может быть');
 						} else if(time > 8 && time < 20){
 							console.log('Магазин работет');
+							mainList.open: true;
 									}else if(time < 24){
 										console.log('Магазин закрыт');
 												}else{
