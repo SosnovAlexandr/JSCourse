@@ -49,33 +49,13 @@ mainList = {
 // 									};
 
 
-// !!!!!!!!!!!!!
-// Не понимаю как можно запустить цикл заново, если условие не соблюлось
-// !!!!!!!!!!!!!
-
-
-
-// let i = 0;
-// while (i < 3) {
-// 	let a = prompt('Какой тип товаров будем продавать?');
-// 	   i++;
-// 		  if(a == '') {
-// 		  	console.log('Нельзя оставлять поле пустым');
-// 		  	i--;
-// 		  				  } else if(a === null){
-// 		  				  	console.log('Нельзя делать отмену');
-// 		  				  	i--;
-// 		  				  				} else {
-// 		  				  					mainList.shopGoods[i] = a;
-// 		  				  				}
-// }
 
 
 let i = 0;
-do{
+while (i < 3) {
+		   i++;
 	let a = prompt('Какой тип товаров будем продавать?');
-	i++;
-	if(a == '') {
+		  if(a == '') {
 		  	console.log('Нельзя оставлять поле пустым');
 		  	i--;
 		  				  } else if(a === null){
@@ -85,6 +65,22 @@ do{
 		  				  					mainList.shopGoods[i] = a;
 		  				  				}
 }
-while (i < 3)
+
+
+// let i = 0;
+// do{
+// 	let a = prompt('Какой тип товаров будем продавать?');
+// 	i++;
+// 	if(a == '') {
+// 		  	console.log('Нельзя оставлять поле пустым');
+// 		  	i--;
+// 		  				  } else if(a === null){
+// 		  				  	console.log('Нельзя делать отмену');
+// 		  				  	i--;
+// 		  				  				} else {
+// 		  				  					mainList.shopGoods[i] = a;
+// 		  				  				}
+// }
+// while (i < 3)
 
 console.log(mainList);

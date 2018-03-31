@@ -13,6 +13,7 @@ var positiveArr = arr.filter(function(number) {
   for(var i=0; i<positiveArr.length; i++){
   var arrUp = Math.pow(positiveArr[i],3);
   console.log(arrUp);
+
  }
 
 
