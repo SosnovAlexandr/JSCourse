@@ -3,7 +3,7 @@
 }
 body {
   height: 670px;
-  background: url(../img/bg1.jpg) center no-repeat;
+  background: url(../img/bg2.jpg) center no-repeat;
   background-size: cover;
   word-break: break-all;
   font-family: 'Roboto', sans-serif;
@@ -21,7 +21,8 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   border: 1px solid #000;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
   width: 350px;
@@ -48,7 +49,7 @@ body {
   color: #fff;
   font-weight: 900;
   cursor: pointer;
-  background-color: #5356ad;
+  background-color: rgba(12, 52, 112, 0.8);
   box-shadow: 0px 0px 10px rgba(83, 86, 173, 0.5);
   border-radius: 8px;
   border: 1px solid #fff;
@@ -88,7 +89,7 @@ body {
   width: 550px;
   min-height: 400px;
   padding: 20px;
-  color: #e3e3e3;
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid #e3e3e3;
   border-radius: 5px;
@@ -116,13 +117,13 @@ body {
 }
 .main-info .isopen-value,
 .main-info .discount-value {
-  background-color: red;
+  background-color: rgba(94, 7, 7, 0.5);
 }
 .main-functions {
   width: 550px;
   min-height: 500px;
   padding: 20px;
-  color: #e3e3e3;
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid #e3e3e3;
   border-radius: 5px;
@@ -131,6 +132,7 @@ body {
 .main-functions .choose-items,
 .main-functions .time,
 .main-functions .count-budget,
+.main-functions .promo,
 .main-functions .hire-employers {
   margin-top: 5px;
   text-align: center;
@@ -151,6 +153,7 @@ body {
 }
 .main-functions .choose-item,
 .main-functions .time-value,
+.main-functions .promo-budget-value,
 .main-functions .count-budget-value {
   display: block;
   margin: 0 auto;
@@ -162,6 +165,8 @@ body {
 .main-functions .time-value {
   width: 30%;
 }
+
+.main-functions .promo-budget-value,
 .main-functions .count-budget-value {
   width: 30%;
   display: inline-block;
@@ -207,7 +212,15 @@ button {
 }
 
 button:hover {
-  background-color: rgba(227, 227, 227, 0.3);
+  color: #ffffff;
+  background-color: rgba(227, 227, 227, 0.1);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.open-btn:hover{
+  color: #ffffff;
+  background-color: rgba(12, 52, 112, 1);
   border: 1px solid white;
   cursor: pointer;
 }

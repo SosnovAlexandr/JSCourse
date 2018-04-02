@@ -22,7 +22,7 @@ newLi.innerHTML = 'Пятый пункт';
 newLi.className = "menu-item";
 menu[0].appendChild(newLi);
 
-let atit = prompt('Ваше отношение к техника Apple', '');
+let atit = prompt('Ваше отношение к технике Apple', '');
 let textArea = document.getElementById('prompt');
 textArea.innerHTML = atit;
 console.log(textArea);
