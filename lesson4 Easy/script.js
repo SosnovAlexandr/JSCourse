@@ -90,10 +90,9 @@ mainList = {
  					  					mainList.shopItems = items.split(",");
  					  					mainList.shopItems.push(prompt("Подождите ещё ", ""));
  					  					mainList.shopItems.sort();
- 					  					mainList.shopItems.unshift("");
  					  					var arr = mainList.shopItems;
  					  					arr.forEach(function(item, i, arr) {
- 					  					  alert( 'У нас вы можете купить: ' + i + ": " + item);
+ 					  					  alert( 'У нас вы можете купить: ' + (i+1) + ": " + item);
  					  					});
  					  					let include = { workers: "5 человек", boss: "1 человек" };
  					  					for (let key in include){
