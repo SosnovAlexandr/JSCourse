@@ -1,0 +1,86 @@
+/*// BASE STYLES //*/
+
+html, body{
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.grass, .sky, .road{
+  position: relative;
+}
+
+.sky{
+  height: 40%;
+  background: skyblue;
+}
+
+.grass{
+  height: 30%;
+  background: seagreen;
+}
+
+.road{
+  height: 30%;
+  background: dimgrey;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+
+.lines{
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+}
+
+.mario{
+  position: absolute;
+  left: 10%;
+  z-index: 5;
+}
+ #button{
+  position: absolute;
+  left: calc(40% - 50px);
+  top: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.7);
+  border: none;
+ }
+#button:hover{
+  background-color: rgba(255, 0, 0, 1);
+}
+ #button2{
+  position: absolute;
+  left: calc(60% - 50px);
+  top: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.7);
+  border: none;
+ }
+#button2:hover{
+  background-color: rgba(255, 0, 0, 1);
+}
+/*// ELEMENTS TO ANIMATE //*/
+
+
+
+/*// KEYFRAMES //*/
+
+
+
+
+
+
+

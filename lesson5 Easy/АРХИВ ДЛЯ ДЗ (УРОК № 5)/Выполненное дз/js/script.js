@@ -27,4 +27,3 @@ let textArea = document.getElementById('prompt');
 textArea.innerHTML = atit;
 console.log(textArea);
 
-
