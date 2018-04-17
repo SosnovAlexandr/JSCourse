@@ -157,14 +157,17 @@ image.style.display = 'none';
 
 
 //нижняя форма
+
 let send = new Object();
 send.success = "Всё прошло успешно!";
+
 let botForm = document.getElementById('form');
-let message = document.createElement('div');
+let input1 = botForm.getElementsByTagName('input'),
+    message1 = document.createElement('div');
 
 botForm.addEventListener('submit', function(event) {
   event.preventDefault();
-  botForm.appendChild(message);
+  botForm.appendChild(message1);
 
   let request = new XMLHttpRequest();
   request.open("POST", 'server.php');
@@ -173,19 +176,21 @@ botForm.addEventListener('submit', function(event) {
   request.send(formData1);
   request.onreadystatechange = function(){
       if(request.status == 200 && request.status < 300) {
-        message.innerHTML = send.success;
+        message1.innerHTML = send.success;
       }
     }
-  };
-  for (let i = 0; i <input.length; i++){
-    input[i].value = '';
+  });
+  for (let i = 0; i <input1.length; i++){
+    input1[i].value = '';
   }
-});
-
-
-
 
 
 });
+
+
+
+
+
+
 
 
